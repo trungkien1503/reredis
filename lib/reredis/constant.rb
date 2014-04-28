@@ -1,0 +1,3 @@
+ENV['CACHE_REDIS']='localhost'
+ENV['CACHE_REDIS_TRACK_STATISTICS']='localhost'
+ENV['SIDEKIQ_REDIS']='localhost'
