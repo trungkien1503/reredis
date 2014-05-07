@@ -23,7 +23,6 @@ module Reredis
     $redis_statistics = Redis.new(:host => ENV['CACHE_REDIS_TRACK_STATISTICS'], :port => 6379, :db => 2)
   end
 
-  # if redis error or flushdb, please run rake redis:run_after_flushdb
   def self.mget(objects, str) 
     hash = Hash.new
     return hash if objects.blank?
